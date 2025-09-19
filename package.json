@@ -1,24 +1,14 @@
 {
-  "name": "nwu-live-poll",
+  "name": "nwu-api",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
   "scripts": {
-    "prepare": "husky"
+    "dev": "node index.js"
   },
   "devDependencies": {
-    "eslint": "^9.34.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.5.2",
-    "prettier": "^3.6.2"
+    "prisma": "^6.16.2"
   },
-  "lint-staged": {
-    "apps/api/**/*.{ts,tsx,js,json,md,css}": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "apps/web/**/*.{ts,tsx,js,json,md,css}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
+  "dependencies": {
+    "@prisma/client": "^6.16.2"
   }
 }
